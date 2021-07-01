@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <header-home></header-home>
+  <div class="global-container">
+    <header-home class="global__navbar"></header-home>
   </div>
 </template>
 
@@ -15,3 +15,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.global-container {
+  display: flex;
+  margin: 5% auto auto 0;
+  position: relative;
+  max-width: 1240px;
+}
+
+.global__navbar{
+  width: 25%;
+}
+</style>

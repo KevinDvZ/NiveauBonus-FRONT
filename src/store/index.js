@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import { fastRequire } from './fastRequire';
 
 export default createStore({
   state: {
@@ -6,22 +7,22 @@ export default createStore({
       {
         ordre:1,
         intitule:"Qui-suis je ?",
-        logo: "@/assets/boutons/kevin.png"
+        logo: fastRequire('boutons/kevin', 'png')
       },
       {
         ordre:2,
         intitule:"Créations",
-        logo: "@/assets/boutons/webDesignBrush.svg"
+        logo: fastRequire('boutons/webDesignBrush','svg')
       },
       {
         ordre:3,
         intitule:"Blog",
-        logo: "@/assets/boutons/webDesignBrush.svg"
+        logo: fastRequire('boutons/typeWriter','svg')
       },
       {
         ordre:4,
         intitule:"Labo & Bazar",
-        logo: "@/assets/boutons/webDesignBrush.svg"
+        logo: fastRequire('boutons/fiole','svg')
       },
     ]
 
